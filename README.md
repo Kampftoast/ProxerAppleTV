@@ -1,4 +1,4 @@
 # ProxerAppleTV
-[WIP] (Unofficial) Proxer App for TVOs
+[WIP] (Unofficial) Proxer App for TVOS
 
-Just a small App where you can search and watch Anime / or direct from wishlist
+Just a small App where you can search and watch Anime / or watch direct from wishlist
