@@ -7,23 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9141629FB20D6425881698B5 /* libPods-Proxer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E90618986FED822CF80C14A /* libPods-Proxer.a */; };
 		92FEA7FE206D7651003E0629 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FEA7FD206D7651003E0629 /* AppDelegate.m */; };
-		92FEA801206D7651003E0629 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FEA800206D7651003E0629 /* ViewController.m */; };
 		92FEA804206D7651003E0629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FEA802206D7651003E0629 /* Main.storyboard */; };
 		92FEA806206D7651003E0629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FEA805206D7651003E0629 /* Assets.xcassets */; };
 		92FEA809206D7651003E0629 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FEA808206D7651003E0629 /* main.m */; };
+		92FEA811206D7695003E0629 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FEA810206D7695003E0629 /* LoginController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79BD738D805E5DA048358A93 /* Pods-Proxer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proxer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Proxer/Pods-Proxer.release.xcconfig"; sourceTree = "<group>"; };
+		7E90618986FED822CF80C14A /* libPods-Proxer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Proxer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FEA7F9206D7651003E0629 /* Proxer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proxer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FEA7FC206D7651003E0629 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		92FEA7FD206D7651003E0629 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		92FEA7FF206D7651003E0629 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		92FEA800206D7651003E0629 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		92FEA803206D7651003E0629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92FEA805206D7651003E0629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92FEA807206D7651003E0629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92FEA808206D7651003E0629 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92FEA80F206D7695003E0629 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		92FEA810206D7695003E0629 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		92FEA815206D7DF7003E0629 /* AFNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AFNetworking; path = Pods/AFNetworking/AFNetworking; sourceTree = "<group>"; };
+		BF56318FBCAFF986F277543B /* Pods-Proxer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proxer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Proxer/Pods-Proxer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9141629FB20D6425881698B5 /* libPods-Proxer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D0D7667A9BC97E269A1075 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92FEA815206D7DF7003E0629 /* AFNetworking */,
+				7E90618986FED822CF80C14A /* libPods-Proxer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DDFE95B49347FDEA2EF256F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF56318FBCAFF986F277543B /* Pods-Proxer.debug.xcconfig */,
+				79BD738D805E5DA048358A93 /* Pods-Proxer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		92FEA7F0206D7651003E0629 = {
 			isa = PBXGroup;
 			children = (
 				92FEA7FB206D7651003E0629 /* Proxer */,
 				92FEA7FA206D7651003E0629 /* Products */,
+				6DDFE95B49347FDEA2EF256F /* Pods */,
+				01D0D7667A9BC97E269A1075 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +84,8 @@
 			children = (
 				92FEA7FC206D7651003E0629 /* AppDelegate.h */,
 				92FEA7FD206D7651003E0629 /* AppDelegate.m */,
-				92FEA7FF206D7651003E0629 /* ViewController.h */,
-				92FEA800206D7651003E0629 /* ViewController.m */,
+				92FEA80F206D7695003E0629 /* LoginController.h */,
+				92FEA810206D7695003E0629 /* LoginController.m */,
 				92FEA802206D7651003E0629 /* Main.storyboard */,
 				92FEA805206D7651003E0629 /* Assets.xcassets */,
 				92FEA807206D7651003E0629 /* Info.plist */,
@@ -75,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92FEA80C206D7651003E0629 /* Build configuration list for PBXNativeTarget "Proxer" */;
 			buildPhases = (
+				EF905588DB793D0B2D5D6317 /* [CP] Check Pods Manifest.lock */,
 				92FEA7F5206D7651003E0629 /* Sources */,
 				92FEA7F6206D7651003E0629 /* Frameworks */,
 				92FEA7F7206D7651003E0629 /* Resources */,
+				53C7A618613E764BAF5332D6 /* [CP] Embed Pods Frameworks */,
+				C33C5B284953C77251D15D53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,12 +162,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		53C7A618613E764BAF5332D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Proxer/Pods-Proxer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C33C5B284953C77251D15D53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Proxer/Pods-Proxer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF905588DB793D0B2D5D6317 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Proxer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92FEA7F5206D7651003E0629 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92FEA801206D7651003E0629 /* ViewController.m in Sources */,
+				92FEA811206D7695003E0629 /* LoginController.m in Sources */,
 				92FEA809206D7651003E0629 /* main.m in Sources */,
 				92FEA7FE206D7651003E0629 /* AppDelegate.m in Sources */,
 			);
@@ -262,6 +342,7 @@
 		};
 		92FEA80D206D7651003E0629 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF56318FBCAFF986F277543B /* Pods-Proxer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -277,6 +358,7 @@
 		};
 		92FEA80E206D7651003E0629 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79BD738D805E5DA048358A93 /* Pods-Proxer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
