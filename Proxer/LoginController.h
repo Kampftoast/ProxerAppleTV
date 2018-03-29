@@ -16,7 +16,11 @@
 @property (strong, nonatomic) IBOutlet UITextField *userNameTextField;
 
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet UITextField *secretKeyTextField;
+
+
 @property (strong, nonatomic) IBOutlet UIButton *loginButton;
+@property (strong, nonatomic) IBOutlet UIButton *skipButton;
 
 
 @end

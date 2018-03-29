@@ -39,37 +39,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eH2-y7-4C3">
-                                <rect key="frame" x="605" y="43" width="710" height="459"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anmelden, um fortzufahren." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCr-Tb-I0z">
-                                <rect key="frame" x="567" y="533" width="786" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mit deinem Account anmelden" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCr-Tb-I0z">
+                                <rect key="frame" x="375" y="297" width="1171" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" red="0.54123800992965698" green="0.11136265844106674" blue="0.098770745098590851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Benutzername" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u0L-sV-BAx">
-                                <rect key="frame" x="605" y="658" width="710" height="74"/>
+                                <rect key="frame" x="375" y="409" width="1171" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Passwort" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ApI-xE-h15">
-                                <rect key="frame" x="605" y="789" width="710" height="74"/>
+                                <rect key="frame" x="375" y="541" width="1171" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zwei-Faktor Authentifizierung" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="crk-89-LPn">
+                                <rect key="frame" x="375" y="683" width="1171" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBX-71-WT4">
-                                <rect key="frame" x="737" y="926" width="447" height="86"/>
+                                <rect key="frame" x="457" y="805" width="984" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Login" backgroundImage="buttonColor"/>
                                 <connections>
-                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="FDz-bu-XK6"/>
+                                    <action selector="loginButton_pressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="YLf-3E-iJ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5p3-po-SUK">
+                                <rect key="frame" x="639" y="938" width="642" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Überspringen" backgroundImage="buttonColor"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="5lc-ZX-0CE"/>
+                                    <action selector="skipButton_pressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="R1j-3B-cxe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,6 +99,8 @@
                     <connections>
                         <outlet property="loginButton" destination="FBX-71-WT4" id="eOG-E6-b3t"/>
                         <outlet property="passwordTextField" destination="ApI-xE-h15" id="m0h-bO-bdP"/>
+                        <outlet property="secretKeyTextField" destination="crk-89-LPn" id="l4u-tE-zb9"/>
+                        <outlet property="skipButton" destination="5p3-po-SUK" id="igw-T2-UVf"/>
                         <outlet property="userNameTextField" destination="u0L-sV-BAx" id="Ine-c1-2T1"/>
                     </connections>
                 </viewController>
@@ -90,5 +111,6 @@
     </scenes>
     <resources>
         <image name="Logo" width="512" height="512"/>
+        <image name="buttonColor" width="208" height="100"/>
     </resources>
 </document>

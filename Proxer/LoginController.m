@@ -24,7 +24,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)loginButtonPressed:(id)sender {
+- (IBAction)loginButton_pressed:(id)sender {
     
     AFHTTPSessionManager *loginManager = [[AFHTTPSessionManager alloc]init];
     loginManager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -34,6 +34,7 @@
     NSDictionary *loginParams=@{
                                 @"username":self.userNameTextField.text,
                                 @"password":self.passwordTextField.text,
+                                @"secretkey":self.secretKeyTextField.text,
                                 @"submit":@"Login"
                                 };
     
@@ -46,9 +47,8 @@
                 } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                     NSLog(@"Error while Login.Error: %@",error);
                 }];
-    
-    
-    
+}
+- (IBAction)skipButton_pressed:(id)sender {
 }
 
 
