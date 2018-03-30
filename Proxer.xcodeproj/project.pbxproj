@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9141629FB20D6425881698B5 /* libPods-Proxer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E90618986FED822CF80C14A /* libPods-Proxer.a */; };
+		92FCBE4E206E93BA00D8ACAE /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FCBE4D206E93BA00D8ACAE /* StartController.m */; };
+		92FCBE51206E98E500D8ACAE /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FCBE50206E98E500D8ACAE /* TabBarController.m */; };
+		92FCBE54206E9C5A00D8ACAE /* WatchListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FCBE53206E9C5A00D8ACAE /* WatchListController.m */; };
+		92FCBE57206E9C6600D8ACAE /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FCBE56206E9C6600D8ACAE /* SearchController.m */; };
 		92FEA7FE206D7651003E0629 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FEA7FD206D7651003E0629 /* AppDelegate.m */; };
 		92FEA804206D7651003E0629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FEA802206D7651003E0629 /* Main.storyboard */; };
 		92FEA806206D7651003E0629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FEA805206D7651003E0629 /* Assets.xcassets */; };
@@ -18,6 +22,14 @@
 /* Begin PBXFileReference section */
 		79BD738D805E5DA048358A93 /* Pods-Proxer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Proxer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Proxer/Pods-Proxer.release.xcconfig"; sourceTree = "<group>"; };
 		7E90618986FED822CF80C14A /* libPods-Proxer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Proxer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92FCBE4C206E93BA00D8ACAE /* StartController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
+		92FCBE4D206E93BA00D8ACAE /* StartController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
+		92FCBE4F206E98E500D8ACAE /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		92FCBE50206E98E500D8ACAE /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		92FCBE52206E9C5A00D8ACAE /* WatchListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchListController.h; sourceTree = "<group>"; };
+		92FCBE53206E9C5A00D8ACAE /* WatchListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchListController.m; sourceTree = "<group>"; };
+		92FCBE55206E9C6600D8ACAE /* SearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
+		92FCBE56206E9C6600D8ACAE /* SearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
 		92FEA7F9206D7651003E0629 /* Proxer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proxer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FEA7FC206D7651003E0629 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		92FEA7FD206D7651003E0629 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -86,7 +98,15 @@
 				92FEA7FD206D7651003E0629 /* AppDelegate.m */,
 				92FEA80F206D7695003E0629 /* LoginController.h */,
 				92FEA810206D7695003E0629 /* LoginController.m */,
+				92FCBE4F206E98E500D8ACAE /* TabBarController.h */,
+				92FCBE50206E98E500D8ACAE /* TabBarController.m */,
 				92FEA802206D7651003E0629 /* Main.storyboard */,
+				92FCBE52206E9C5A00D8ACAE /* WatchListController.h */,
+				92FCBE53206E9C5A00D8ACAE /* WatchListController.m */,
+				92FCBE55206E9C6600D8ACAE /* SearchController.h */,
+				92FCBE56206E9C6600D8ACAE /* SearchController.m */,
+				92FCBE4C206E93BA00D8ACAE /* StartController.h */,
+				92FCBE4D206E93BA00D8ACAE /* StartController.m */,
 				92FEA805206D7651003E0629 /* Assets.xcassets */,
 				92FEA807206D7651003E0629 /* Info.plist */,
 				92FEA808206D7651003E0629 /* main.m */,
@@ -219,7 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				92FEA811206D7695003E0629 /* LoginController.m in Sources */,
+				92FCBE54206E9C5A00D8ACAE /* WatchListController.m in Sources */,
 				92FEA809206D7651003E0629 /* main.m in Sources */,
+				92FCBE57206E9C6600D8ACAE /* SearchController.m in Sources */,
+				92FCBE51206E98E500D8ACAE /* TabBarController.m in Sources */,
+				92FCBE4E206E93BA00D8ACAE /* StartController.m in Sources */,
 				92FEA7FE206D7651003E0629 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
