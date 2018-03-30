@@ -52,6 +52,9 @@
                 }];
 }
 - (IBAction)skipButton_pressed:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    TabBarController *tabBar = [storyboard instantiateViewControllerWithIdentifier:@"tabBar"];
+    [self.navigationController pushViewController:tabBar animated:true];
 }
 
 
