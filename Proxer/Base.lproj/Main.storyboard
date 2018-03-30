@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5U7-Bp-cFC">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XOU-RB-oaq">
     <device id="appleTV" orientation="landscape">
         <adaptation id="light"/>
     </device>
@@ -10,21 +10,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="Muy-pO-Xf8">
+        <!--Root View Controller-->
+        <scene sceneID="g5v-MC-Dav">
             <objects>
-                <navigationController id="5U7-Bp-cFC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eFU-cB-srQ">
+                <tableViewController id="Rxf-c3-BIQ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" id="Alc-33-NoW">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="rO5-gm-5jf">
+                                <rect key="frame" x="0.0" y="66" width="1700" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rO5-gm-5jf" id="rgz-SQ-8by">
+                                    <rect key="frame" x="0.0" y="0.0" width="1700" height="66"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Rxf-c3-BIQ" id="uly-wb-dSJ"/>
+                            <outlet property="delegate" destination="Rxf-c3-BIQ" id="e3F-Ep-RTN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="a9F-0J-zvZ"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="9Ek-Tm-HrL"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J9v-RD-vOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3191" y="223"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Qe-hi-BxF">
+            <objects>
+                <navigationController id="XOU-RB-oaq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f46-5C-ee1">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UlM-Fh-DGf"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0RR-aC-o9r"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oHC-af-jlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycS-Wc-d3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3822" y="222"/>
+            <point key="canvasLocation" x="-5441" y="223"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -106,11 +137,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-936" y="223"/>
+            <point key="canvasLocation" x="-753" y="223"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="512" height="512"/>
         <image name="buttonColor" width="208" height="100"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0RR-aC-o9r"/>
+    </inferredMetricsTieBreakers>
 </document>
