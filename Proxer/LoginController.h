@@ -23,5 +23,10 @@
 @property (strong, nonatomic) IBOutlet UIButton *loginButton;
 @property (strong, nonatomic) IBOutlet UIButton *skipButton;
 
+//var
+
+@property (nonatomic)NSString *passwordInStore;
+
+
 
 @end
